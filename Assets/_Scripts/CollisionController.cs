@@ -8,7 +8,7 @@ public class CollisionController : MonoBehaviour {
 			rigidbody.mass += info.rigidbody.mass;
 
 			SphereCollider s = collider as SphereCollider;
-			s.radius += 0.02F;
+			s.radius += 0.012F;
 
 			Destroy (info.rigidbody);
 			info.transform.parent = transform;

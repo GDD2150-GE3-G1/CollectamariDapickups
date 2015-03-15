@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
 		forceSpeed = 200 * (gameObject.rigidbody.mass);
-		Debug.Log (forceSpeed);
 		
 		rigidbody.AddForce (movement * forceSpeed * Time.deltaTime);
 	}
