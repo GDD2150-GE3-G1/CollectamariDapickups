@@ -5,8 +5,11 @@ public class WinCheckerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		if (transform.position.y < 0 || CollisionController.collectedPickups > 300) {
-			Application.Quit ();
+		if (transform.position.y < 0 || CollisionController.collectedPickups > 500) {
+			Application.LoadLevel("Winner");
+		}
+		else if (TimerUpdater.remainingSeconds < 0) {
+
 		}
 	}
 }

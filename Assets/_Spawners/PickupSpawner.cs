@@ -6,7 +6,7 @@ public class PickupSpawner : MonoBehaviour {
 	public GameObject pickupObject;
 
 	private float timeElapsed = 0F;
-	private float spawnTime = 0.25F;
+	private float spawnTime = 0.1F;
 
 
 	void Update () {
