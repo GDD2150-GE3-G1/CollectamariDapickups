@@ -6,7 +6,7 @@ public class PickupSpawner : MonoBehaviour {
 	public GameObject pickupObject;
 
 	private float timeElapsed = 0F;
-	private float spawnTime = 0.5F;
+	private float spawnTime = 0.25F;
 
 
 	void Update () {
@@ -14,7 +14,7 @@ public class PickupSpawner : MonoBehaviour {
 
 		if (timeElapsed > spawnTime) {
 			GameObject spawnedPickup = (GameObject)Instantiate(pickupObject);
-			spawnedPickup.transform.position = new Vector3(Random.Range(-25, 25), 20, Random.Range(-25, 25));
+			spawnedPickup.transform.position = new Vector3(Random.Range(-23, 23), 15, Random.Range(-23, 23));
 			timeElapsed -= spawnTime;
 		}
 	}

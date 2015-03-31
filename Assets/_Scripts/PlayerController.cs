@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	private float forceSpeed = 500;
+	private float forceSpeed = 0;
 	
 	void FixedUpdate() {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
