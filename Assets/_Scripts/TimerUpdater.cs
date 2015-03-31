@@ -13,7 +13,6 @@ public class TimerUpdater : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		elapsedTime += Time.deltaTime;
-		Debug.Log (elapsedTime);
 
 		if (elapsedTime > 1) {
 			int minutes = remainingSeconds / 60;

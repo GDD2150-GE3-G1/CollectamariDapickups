@@ -8,7 +8,8 @@ public class CollisionController : MonoBehaviour {
 	void OnCollisionEnter(Collision collidedWith) {
 		if (collidedWith.gameObject.tag == "Pickup") {
 			collectedPickups++;
-			Debug.Log(collectedPickups + " items have been picked up");
+
+			audio.PlayOneShot(audio.clip, 1f);
 
 			BoxCollider b = collidedWith.collider as BoxCollider;
 			Vector3 shrinkCollider = b.size;
