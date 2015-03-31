@@ -15,6 +15,7 @@ public class PickupSpawner : MonoBehaviour {
 		if (timeElapsed > spawnTime) {
 			GameObject spawnedPickup = (GameObject)Instantiate(pickupObject);
 			spawnedPickup.transform.position = new Vector3(Random.Range(-23, 23), 15, Random.Range(-23, 23));
+			spawnedPickup.renderer.material.color = new Color(Random.value, Random.value, Random.value, 1f);
 			timeElapsed -= spawnTime;
 		}
 	}

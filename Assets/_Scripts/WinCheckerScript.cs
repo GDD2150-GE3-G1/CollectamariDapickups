@@ -9,7 +9,7 @@ public class WinCheckerScript : MonoBehaviour {
 			Application.LoadLevel("Winner");
 		}
 		else if (TimerUpdater.remainingSeconds < 0) {
-
+			Application.LoadLevel("Loser");
 		}
 	}
 }
